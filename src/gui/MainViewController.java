@@ -31,10 +31,12 @@ public class MainViewController implements Initializable {
 	public void onMenuItemSellerAction () {
 		System.out.println("onMenuItemSellerAction");
 	}
+	
 	@FXML
 	public void onMenuItemDepartmentAction () {
-		System.out.println("onMenuItemDepartmentAction");
+		loadView("/gui/DepartmentList.fxml");
 	}
+	
 	@FXML
 	public void onMenuItemAboutAction () {
 		loadView("/gui/About.fxml");
